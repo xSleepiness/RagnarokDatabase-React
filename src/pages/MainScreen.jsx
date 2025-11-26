@@ -23,6 +23,7 @@ const MainScreen = () => {
   ];
 
   useEffect(() => {
+    document.title = 'Ragnarok Database - Home';
     loadPopularItems(selectedPeriod);
     loadTotalItemsCount();
     loadItemTypes();

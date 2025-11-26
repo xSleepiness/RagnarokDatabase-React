@@ -22,6 +22,12 @@ const ItemDetailScreen = () => {
     loadItemTypes();
   }, [id]);
 
+  useEffect(() => {
+    if (item) {
+      document.title = `${item.name} - Ragnarok Database`;
+    }
+  }, [item]);
+
   const loadItemDetail = async () => {
     try {
       setLoading(true);

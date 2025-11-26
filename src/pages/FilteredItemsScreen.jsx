@@ -22,6 +22,7 @@ const FilteredItemsScreen = () => {
   const itemsPerPage = 20;
 
   useEffect(() => {
+    document.title = `${decodedType} - Ragnarok Database`;
     loadItems(currentPage);
     loadItemTypes();
   }, [type, currentPage]);

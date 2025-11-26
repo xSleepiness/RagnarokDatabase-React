@@ -18,6 +18,7 @@ const SearchScreen = () => {
   const [itemTypes, setItemTypes] = useState([]);
 
   useEffect(() => {
+    document.title = query ? `Search: ${query} - Ragnarok Database` : 'Search - Ragnarok Database';
     if (query) {
       performSearch(query);
     }
